@@ -29,6 +29,7 @@ img, embed, object, video {
   max-width: 100%; 
 }
 
+
 /*
  *
  * Common
@@ -183,6 +184,7 @@ main {
   border-bottom: 1px solid #E0E0E0;
   line-height: 24px;
   font-size: 16px;
+  width: 100%;
 }
 
 .top-news__item {
@@ -375,3 +377,24 @@ footer a {
 }
 
 nav ul li a { min-width: 48px; min-height: 48px; }
+
+
+
+
+/*
+* Blocks
+*/
+.hero, .top-news, .scores,
+.weather, .recent-news{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 500px) {
+  .scores, .top-news { 
+    width: 50%;
+  }
+  .recent-news { 
+    width: 50%;
+  }
+}
